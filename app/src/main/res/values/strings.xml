@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Health Care</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

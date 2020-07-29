@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sign_bg"
+    tools:context=".MedSignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/med_profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/med_assist"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/add_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/med_profile_image"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="85dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="65dp"
+                app:layout_constraintEnd_toEndOf="@+id/med_profile_image"
+                app:layout_constraintStart_toStartOf="@+id/med_profile_image"
+                app:layout_constraintTop_toTopOf="@+id/med_profile_image"
+                app:srcCompat="@mipmap/add" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView_MedSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:text="Med Assistant Sign Up"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/MedSignUpCardName"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="30dp">
+
+                <EditText
+                    android:id="@+id/editTextTextMedSignUpName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="2dp"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/MedSignUpCardMobile"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="30dp">
+
+                <EditText
+                    android:id="@+id/editTextTextMedSignUpMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="Mobile No"
+                    android:inputType="phone"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="2dp"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/MedSignUpCardEmail"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="30dp">
+
+                <EditText
+                    android:id="@+id/editTextTextMedSignUpEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="2dp"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/MedSignUpCardPassword"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="30dp">
+
+                <EditText
+                    android:id="@+id/editTextTextMedSignUpPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="2dp"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/MedSignUpCardBloodGroup"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="30dp">
+
+                <EditText
+                    android:id="@+id/editTextTextMedSignUpBloodGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="Blood Group"
+                    android:inputType="text"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="2dp"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/MedSignUpCardLicense"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="30dp">
+
+                <EditText
+                    android:id="@+id/editTextTextMedSignUpLicense"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="License"
+                    android:inputType="text"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="2dp"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="30dp">
+
+                <ImageButton
+                    android:id="@+id/MedSignUpBackButton"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/ripple_effect"
+                    android:src="@drawable/left_arrow" />
+
+                <Button
+                    android:id="@+id/MedSignUpNextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/ripple_effect"
+                    android:text="Next"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
